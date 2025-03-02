@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+</head>
+<body>
+<p><b>u1:</b></p>
+<p>Hello {{.u1.Name}}</p>
+<p>Age: {{.u1.Age}}</p>
+<p>Gender {{.u1.Gender}}</p>
+
+<p><b>m1:</b></p>
+<p>Hello {{.m1.Name}}</p>
+<p>Age: {{.m1.Age}}</p>
+<p>Gender {{.m1.Gender}}</p>
+
+{{$v1:=100}}
+{{$age:=.m1.Age}}
+{{ if $v1}}
+{{ $v1 }}
+{{ else }}
+nothing
+{{ end }}
+
+{{range $idx,$hobby:=.hobby}}
+<p>{{$idx}} - {{$hobby}}</p>
+{{end}}
+
+<br>
+{{with .m1}}
+<p>Hello from with: {{.Name}}</p>
+{{end}}
+</body>
+</html>

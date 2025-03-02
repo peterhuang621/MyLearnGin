@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+
+<body>
+    <title>Hello, {{.}}.</title>
+    <style>
+        * {
+            margin: 0
+        }
+
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: blue;
+        }
+
+        .main {
+            height: 20px;
+            width: 20%;
+            margin-top: 50px;
+        }
+
+        .menu {
+            width: 20%;
+            height: 100%;
+            background-color: cornflowerblue;
+        }
+    </style>
+
+    <div class="nav"></div>
+    <div class="main">
+        <div class="menu"></div>
+        <div class="content">Hello, {{.}}.</div>
+    </div>
+</body>
+
+</html>
