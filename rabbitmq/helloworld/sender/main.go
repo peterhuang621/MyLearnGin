@@ -26,5 +26,5 @@ func main() {
 	failOnError(err, "failed to create the queue")
 
 	body := "this is a message aaa"
-	ch.PublishWithContext(context.Background(), "", q.Name, false, false, amqp.Publishing{ContentType: "text/pain", Body: []byte(body)})
+	ch.PublishWithContext(context.Background(), "", q.Name, false, false, amqp.Publishing{ContentType: "text/plain", Body: []byte(body)})
 }
