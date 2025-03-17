@@ -1,0 +1,7 @@
+2025/03/17 17:32:46 Binding queue amq.gen-iE5l0z5L9BfctaKz81Igzw to exhange logs_direct with routing key warning
+2025/03/17 17:32:46 Binding queue amq.gen-iE5l0z5L9BfctaKz81Igzw to exhange logs_direct with routing key info
+2025/03/17 17:32:46  [*] Waiting for logs. To exit press CTRL+C
+2025/03/17 17:33:38  [x] Run. Run. Or it will explode.
+2025/03/17 17:33:59  [x] this is a warning message
+2025/03/17 17:34:17  [x] this is a warning message
+signal: interrupt
